@@ -1,0 +1,183 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eee;
+  line-height: 1.6;
+  background: 
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url("../images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../images/background.jpg") no-repeat center center;
+  background-size: cover;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* Logo styling */
+#logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#logo:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation container */
+#divhead nav {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Nav links */
+#divhead nav a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#divhead nav a:hover {
+  color: #4da6ff; /* Halo-blue accent */
+  transform: translateY(-2px);
+}
+
+#divhead nav a:active {
+  color: #1e90ff;
+}
+
+/* Footer */
+footer {
+  padding: 1.5rem 2rem;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../images/background.jpg") no-repeat center center;
+  background-size: cover;
+
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+  color: #eee;
+  font-size: 0.95rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-center,
+footer nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer nav a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+  color: #4da6ff;
+}
+
+/* Sections (Latest + Learn) */
+#Latest,
+#Learn {
+  padding: 3rem 2rem;
+  text-align: center;
+
+  background: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("../images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#Latest h2,
+#Learn h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #4da6ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Grid Layout */
+#Latest .grid,
+#Learn .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Styles */
+#Latest .card,
+#Learn .card {
+  background: rgba(15, 15, 15, 0.85);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+#Latest .card:hover,
+#Learn .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* Card Images */
+#Latest .card img,
+#Learn .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card Text */
+#Latest .card h3,
+#Learn .card h3 {
+  font-size: 1.3rem;
+  margin: 1rem;
+  color: #fff;
+}
+
+#Latest .card p,
+#Learn .card p {
+  margin: 0 1rem 1.5rem;
+  font-size: 0.95rem;
+  color: #ccc;
+}
