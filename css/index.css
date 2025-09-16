@@ -1,4 +1,4 @@
-/* Reset defaults */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
   background-size: cover;
 }
 
-/* Header */
+
 header {
   position: sticky;
   top: 0;
@@ -33,7 +33,7 @@ header {
   z-index: 1000;
 }
 
-/* Logo styling */
+
 #logo {
   height: 80px;
   width: auto;
@@ -46,13 +46,12 @@ header {
   transform: scale(1.05);
 }
 
-/* Navigation container */
+
 #divhead nav {
   display: flex;
   gap: 2rem;
 }
 
-/* Nav links */
 #divhead nav a {
   color: #eee;
   text-decoration: none;
@@ -62,7 +61,7 @@ header {
 }
 
 #divhead nav a:hover {
-  color: #4da6ff; /* Halo-blue accent */
+  color: #4da6ff; 
   transform: translateY(-2px);
 }
 
@@ -70,7 +69,7 @@ header {
   color: #1e90ff;
 }
 
-/* Footer */
+
 footer {
   padding: 1.5rem 2rem;
   background: 
@@ -110,7 +109,7 @@ footer nav a:hover {
   color: #4da6ff;
 }
 
-/* Sections (Latest + Learn) */
+
 #Latest,
 #Learn {
   padding: 3rem 2rem;
@@ -131,7 +130,7 @@ footer nav a:hover {
   letter-spacing: 2px;
 }
 
-/* Grid Layout */
+
 #Latest .grid,
 #Learn .grid {
   display: grid;
@@ -141,7 +140,7 @@ footer nav a:hover {
   margin: 0 auto;
 }
 
-/* Card Styles */
+
 #Latest .card,
 #Learn .card {
   background: rgba(15, 15, 15, 0.85);
@@ -158,7 +157,7 @@ footer nav a:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
 }
 
-/* Card Images */
+
 #Latest .card img,
 #Learn .card img {
   width: 100%;
@@ -167,7 +166,7 @@ footer nav a:hover {
   display: block;
 }
 
-/* Card Text */
+
 #Latest .card h3,
 #Learn .card h3 {
   font-size: 1.3rem;
@@ -183,7 +182,7 @@ footer nav a:hover {
 }
 
 
-/* Carson's Picks Section */
+
 #carsonpicks {
   padding: 3rem 2rem;
   text-align: center;
@@ -198,12 +197,11 @@ footer nav a:hover {
 #carsonpicks h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #ffcc33; /* gold accent to set it apart */
+  color: #ffcc33; 
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-/* Grid Layout */
 #carsonpicks .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -212,13 +210,12 @@ footer nav a:hover {
   margin: 0 auto;
 }
 
-/* Card Links */
+
 #carsonpicks .card-link {
   text-decoration: none;
   color: inherit;
 }
 
-/* Card Styles */
 #carsonpicks .card {
   background: rgba(15, 15, 15, 0.85);
   border-radius: 1rem;
@@ -236,7 +233,7 @@ footer nav a:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
 }
 
-/* Card Images */
+
 #carsonpicks .card img {
   width: 100%;
   height: 180px;
@@ -244,7 +241,7 @@ footer nav a:hover {
   display: block;
 }
 
-/* Card Text */
+
 #carsonpicks .card h3 {
   font-size: 1.3rem;
   margin: 1rem;

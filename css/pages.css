@@ -1,4 +1,4 @@
-/* Reset defaults */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
   background-size: cover;
 }
 
-/* Header */
+
 header {
   position: sticky;
   top: 0;
@@ -33,7 +33,7 @@ header {
   z-index: 1000;
 }
 
-/* Logo styling */
+
 #logo {
   height: 80px;
   width: auto;
@@ -46,13 +46,13 @@ header {
   transform: scale(1.05);
 }
 
-/* Navigation container */
+
 #divhead nav {
   display: flex;
   gap: 2rem;
 }
 
-/* Nav links */
+
 #divhead nav a {
   color: #eee;
   text-decoration: none;
@@ -62,7 +62,7 @@ header {
 }
 
 #divhead nav a:hover {
-  color: #4da6ff; /* Halo-blue accent */
+  color: #4da6ff; 
   transform: translateY(-2px);
 }
 
@@ -70,7 +70,7 @@ header {
   color: #1e90ff;
 }
 
-/* Footer */
+
 footer {
   padding: 1.5rem 2rem;
   background: 
