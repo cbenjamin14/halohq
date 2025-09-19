@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="js/index.js"></script>
 		<title>Halo HQ</title>
 	</head>
 
@@ -26,6 +25,19 @@
 
 
 	<body>
+		<div id="popup">
+			<div class="popup-content">
+				<h2>Get the Latest Halo News!</h2>
+				<p>Subscribe with your email to stay updated on Halo news!</p>
+
+				<form id="subscribe-form">
+					<input type="email" placeholder="Enter your email" required>
+					<button type="submit">Subscribe</button>
+				</form>
+				<button id="close-popup" class="close-btn">✖</button>
+			</div>
+		</div>
+
 		<section id="Latest">
 		<h2>Latest News</h2>
 		<div class="grid">
@@ -36,7 +48,7 @@
 				<p>The game's new Fall Update rolled out with Operation: Shadows. It includes a new vehicle (the Falcon), a new weapon (the Vestige Carbine), new Forge features, limited-time playlists, and a premium Operation Pass with armor sets.</p>
 			</article>
 			</a>
-			<a href="/pages/update2025.html" class="card-link">
+			<a href="pages/imr.html" class="card-link">
 			<article class="card">
 				<img src="images/cards/card2.webp" alt="Invasion Mode Returns">
 				<h3>Invasion Mode Returns</h3>

@@ -109,3 +109,64 @@ footer nav a {
 footer nav a:hover {
   color: #4da6ff;
 }
+
+.article-section {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url("../images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #eee;
+}
+
+.article-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #4da6ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.article-section .article-card {
+  background: rgba(15, 15, 15, 0.85);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.article-section .article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+.article-section .article-card h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.article-section .article-card p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.article-section .article-card ul {
+  margin-left: 1rem;
+  color: #ccc;
+}
+
+.article-section .article-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.article-section a {
+  color: #4da6ff;
+  text-decoration: none;
+}
+
+.article-section a:hover {
+  text-decoration: underline;
+}
