@@ -35,7 +35,7 @@ header {
 
 
 #logo {
-  height: 120px;
+  height: 80px;
   width: auto;
   object-fit: contain;
   cursor: pointer;
@@ -254,18 +254,16 @@ footer nav a:hover {
   color: #ccc;
 }
 
-/* Overlay background */
 #popup-overlay {
-  display: none; /* hidden by default */
+  display: none;
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 999;
 }
 
-/* Popup window */
 #popup {
-  display: none; /* hidden by default */
+  display: none;
   position: fixed;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
@@ -316,7 +314,6 @@ footer nav a:hover {
   background: #1e90ff;
 }
 
-/* Close button */
 .close-btn {
   position: absolute;
   top: 0.5rem;
@@ -333,9 +330,9 @@ footer nav a:hover {
   color: #fff;
 }
 
-/* Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translate(-50%, -45%); }
   to { opacity: 1; transform: translate(-50%, -50%); }
 }
+
 
