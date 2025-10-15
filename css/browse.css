@@ -1,20 +1,21 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #eee;
   line-height: 1.6;
-  background: 
+  background:
     linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
     url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-
 
 header {
   position: sticky;
@@ -23,16 +24,13 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 5%;
-
-  background: 
+  background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("../images/background.jpg") no-repeat center center;
   background-size: cover;
-
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
-
 
 #logo {
   height: 80px;
@@ -45,7 +43,6 @@ header {
 #logo:hover {
   transform: scale(1.05);
 }
-
 
 #divhead nav {
   display: flex;
@@ -61,7 +58,7 @@ header {
 }
 
 #divhead nav a:hover {
-  color: #4da6ff; 
+  color: #4da6ff;
   transform: translateY(-2px);
 }
 
@@ -69,14 +66,12 @@ header {
   color: #1e90ff;
 }
 
-
 footer {
   padding: 1.5rem 2rem;
-  background: 
+  background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("../images/background.jpg") no-repeat center center;
   background-size: cover;
-
   box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
   color: #eee;
   font-size: 0.95rem;
@@ -109,13 +104,11 @@ footer nav a:hover {
   color: #4da6ff;
 }
 
-
 #Latest,
 #Learn {
   padding: 3rem 2rem;
   text-align: center;
-
-  background: 
+  background:
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
     url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -130,7 +123,6 @@ footer nav a:hover {
   letter-spacing: 2px;
 }
 
-
 #Latest .grid,
 #Learn .grid {
   display: grid;
@@ -139,7 +131,6 @@ footer nav a:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 
 #Latest .card,
 #Learn .card {
@@ -157,7 +148,6 @@ footer nav a:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
 }
 
-
 #Latest .card img,
 #Learn .card img {
   width: 100%;
@@ -165,7 +155,6 @@ footer nav a:hover {
   object-fit: cover;
   display: block;
 }
-
 
 #Latest .card h3,
 #Learn .card h3 {
@@ -181,13 +170,10 @@ footer nav a:hover {
   color: #ccc;
 }
 
-
-
 #carsonpicks {
   padding: 3rem 2rem;
   text-align: center;
-
-  background: 
+  background:
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
     url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -197,7 +183,7 @@ footer nav a:hover {
 #carsonpicks h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #ffcc33; 
+  color: #ffcc33;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -209,7 +195,6 @@ footer nav a:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 
 #carsonpicks .card-link {
   text-decoration: none;
@@ -233,14 +218,12 @@ footer nav a:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
 }
 
-
 #carsonpicks .card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   display: block;
 }
-
 
 #carsonpicks .card h3 {
   font-size: 1.3rem;
@@ -333,12 +316,4 @@ footer nav a:hover {
 @keyframes fadeIn {
   from { opacity: 0; transform: translate(-50%, -45%); }
   to { opacity: 1; transform: translate(-50%, -50%); }
-}
-
-
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrollbars */
-  background-color: #000; /* or your site’s background color */
 }
