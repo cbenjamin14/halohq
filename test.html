@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #333; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+  </style>
+</head>
+<body>
+
+<h2>Player Stats Lookup</h2>
+
+<input type="text" id="playerInput" placeholder="Enter player name" onkeypress="if(event.key === 'Enter'){showStats();}">
+<button onclick="showStats()">Show Stats</button>
+
+<table id="statsTable">
+  <thead>
+    <tr>
+      <th>Stat</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Stats appear here -->
+  </tbody>
+</table>
+
+<script>
+// Predefined player stats
+const playerStats = {
+  "Alice": { Score: 1500, Level: 10, Wins: 5 },
+  "Bob": { Score: 2000, Level: 12, Wins: 8 },
+  "Charlie": { Score: 1800, Level: 11, Wins: 6 }
+};
+
+function showStats() {
+  const playerName = document.getElementById('playerInput').value.trim();
+  const tbody = document.getElementById('statsTable').querySelector('tbody');
+  tbody.innerHTML = ''; // Clear previous table
+
+  if (!playerName) {
+    alert("Please enter a player name.");
+    return;
+  }
+
+  const stats = playerStats[playerName];
+  if (!stats) {
+    alert("Player not found!");
+    return;
+  }
+
+  for (const stat in stats) {
+    const row = document.createElement('tr');
+    row.innerHTML = `<td>${stat}</td><td>${stats[stat]}</td>`;
+    tbody.appendChild(row);
+  }
+}
+</script>
+
+</body>
+</html>

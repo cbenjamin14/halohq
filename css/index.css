@@ -1,20 +1,19 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #eee;
   line-height: 1.6;
-  background: 
+  overflow-x: hidden;
+  background:
     linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
     url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-
 
 header {
   position: sticky;
@@ -23,16 +22,13 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 5%;
-
-  background: 
+  background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("../images/background.jpg") no-repeat center center;
   background-size: cover;
-
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
-
 
 #logo {
   height: 80px;
@@ -45,7 +41,6 @@ header {
 #logo:hover {
   transform: scale(1.05);
 }
-
 
 #divhead nav {
   display: flex;
@@ -61,7 +56,7 @@ header {
 }
 
 #divhead nav a:hover {
-  color: #4da6ff; 
+  color: #4da6ff;
   transform: translateY(-2px);
 }
 
@@ -69,14 +64,12 @@ header {
   color: #1e90ff;
 }
 
-
 footer {
   padding: 1.5rem 2rem;
-  background: 
+  background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("../images/background.jpg") no-repeat center center;
   background-size: cover;
-
   box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
   color: #eee;
   font-size: 0.95rem;
@@ -109,13 +102,12 @@ footer nav a:hover {
   color: #4da6ff;
 }
 
-
 #Latest,
-#Learn {
+#Learn,
+#carsonpicks {
   padding: 3rem 2rem;
   text-align: center;
-
-  background: 
+  background:
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
     url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -130,79 +122,15 @@ footer nav a:hover {
   letter-spacing: 2px;
 }
 
-
-#Latest .grid,
-#Learn .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-
-#Latest .card,
-#Learn .card {
-  background: rgba(15, 15, 15, 0.85);
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: left;
-}
-
-#Latest .card:hover,
-#Learn .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-}
-
-
-#Latest .card img,
-#Learn .card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
-}
-
-
-#Latest .card h3,
-#Learn .card h3 {
-  font-size: 1.3rem;
-  margin: 1rem;
-  color: #fff;
-}
-
-#Latest .card p,
-#Learn .card p {
-  margin: 0 1rem 1.5rem;
-  font-size: 0.95rem;
-  color: #ccc;
-}
-
-
-
-#carsonpicks {
-  padding: 3rem 2rem;
-  text-align: center;
-
-  background: 
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url("../images/background.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: #eee;
-}
-
 #carsonpicks h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #ffcc33; 
+  color: #ffcc33;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-#carsonpicks .grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -210,12 +138,9 @@ footer nav a:hover {
   margin: 0 auto;
 }
 
-
-#carsonpicks .card-link {
-  text-decoration: none;
-  color: inherit;
-}
-
+.card,
+#Latest .card,
+#Learn .card,
 #carsonpicks .card {
   background: rgba(15, 15, 15, 0.85);
   border-radius: 1rem;
@@ -223,49 +148,52 @@ footer nav a:hover {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
+.card:hover,
+#Latest .card:hover,
+#Learn .card:hover,
 #carsonpicks .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
 }
 
-
-#carsonpicks .card img {
+.card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   display: block;
 }
 
-
-#carsonpicks .card h3 {
+.card h3 {
   font-size: 1.3rem;
   margin: 1rem;
   color: #fff;
 }
 
-#carsonpicks .card p {
+.card p {
   margin: 0 1rem 1.5rem;
   font-size: 0.95rem;
   color: #ccc;
 }
 
-#popup-overlay {
+#carsonpicks .card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#popup-overlay,
+#popup {
   display: none;
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
   z-index: 999;
 }
 
 #popup {
-  display: none;
-  position: fixed;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(20, 20, 20, 0.95);
   border-radius: 1rem;
@@ -273,10 +201,10 @@ footer nav a:hover {
   padding: 2rem;
   max-width: 400px;
   width: 90%;
-  z-index: 1000;
   animation: fadeIn 0.3s ease;
   color: #eee;
   text-align: center;
+  z-index: 1000;
 }
 
 #popup h2 {
@@ -333,12 +261,4 @@ footer nav a:hover {
 @keyframes fadeIn {
   from { opacity: 0; transform: translate(-50%, -45%); }
   to { opacity: 1; transform: translate(-50%, -50%); }
-}
-
-
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrollbars */
-  background-color: #000; /* or your site’s background color */
 }

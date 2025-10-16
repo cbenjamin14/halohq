@@ -1,104 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/browse.css">
-	<script src="js/index.js"></script>
-	<link rel="icon" type="image/png" href="/images/favicon.png">
-	<title>Halo HQ</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/browse.css">
+  <script src="js/index.js" defer></script>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <title>Halo HQ | Browse</title>
 </head>
 
-<header>
-	<img id="logo" src="images/halohqlogo.png">
-	<div id="divhead">
-		<nav>
-			<a href="pages/hcel.html">Latest</a>
-			<a href="browse.html">Browse</a>
-			<a href="learn.html">Learn</a>
-			<a href="https://store.steampowered.com/app/1240440/Halo_Infinite/">Play Halo</a>
-		</nav>
-	</div>
-</header>
-
 <body>
-	<section id="Latest">
-		<div class="grid">
-			<a href="pages/update2025.html" class="card-link">
-				<article class="card">
-					<img src="images/cards/card1.jpg" alt="Halo Infinite Update 2025">
-					<h3>Fall Update 2025 | Halo Infinite</h3>
-					<p>The game's new Fall Update rolled out with Operation: Shadows. It includes a new vehicle (the Falcon), a new weapon (the Vestige Carbine), new Forge features, limited-time playlists, and a premium Operation Pass with armor sets.</p>
-				</article>
-			</a>
+  <header>
+    <a href="index.html">
+      <img id="logo" src="images/halohqlogo.png" alt="Halo HQ Logo">
+    </a>
+    <div id="divhead">
+      <nav>
+        <a href="pages/hcel.html">Latest</a>
+        <a href="browse.html" class="active">Browse</a>
+        <a href="learn.html">Learn</a>
+        <a href="https://store.steampowered.com/app/1240440/Halo_Infinite/" target="_blank">Play Halo</a>
+      </nav>
+    </div>
+  </header>
 
-			<a href="pages/imr.html" class="card-link">
-				<article class="card">
-					<img src="images/cards/card2.webp" alt="Invasion Mode Returns">
-					<h3>Invasion Mode Returns</h3>
-					<p>Invasion (a mode from Halo: Reach) has been brought back in Halo Infinite as part of Warpath. Six maps are included — some remakes from Reach, others newly designed.</p>
-				</article>
-			</a>
+  <main>
+    <section id="Latest">
+      <h2>Browse Articles</h2>
+      <div class="grid">
 
-			<a href="pages/hcel.html" class="card-link">
-				<article class="card">
-					<img src="images/cards/card7.webp" alt="Halo Combat Evolved Potential Remake">
-					<h3>Combat Evolved — Full Remake (Unreal Engine 5) (Rumor Roundup)</h3>
-					<p>A complete, UE5-powered remake of Halo: Combat Evolved is widely reported in October 2025 — here’s what the rumors, context, and next steps mean for fans.</p>
-				</article>
-			</a>
+        <a href="pages/update2025.html" class="card-link">
+          <article class="card">
+            <img src="images/cards/card1.jpg" alt="Halo Infinite Update 2025">
+            <h3>Fall Update 2025 | Halo Infinite</h3>
+            <p>The Fall Update rolls out with Operation: Shadows — adding the Falcon vehicle, Vestige Carbine, Forge improvements, and limited-time playlists.</p>
+          </article>
+        </a>
 
-			<a href="/pages/update2025.html" class="card-link">
-				<article class="card">
-					<img src="images/cards/card4.jpg" alt="Learn 1">
-					<h3>Learn 1</h3>
-					<p>Learn Description 1</p>
-				</article>
-			</a>
+        <a href="pages/imr.html" class="card-link">
+          <article class="card">
+            <img src="images/cards/card2.webp" alt="Invasion Mode Returns">
+            <h3>Invasion Mode Returns</h3>
+            <p>The classic Invasion mode from Halo: Reach returns with new maps and objectives, reimagined for Infinite’s engine.</p>
+          </article>
+        </a>
 
-			<a href="/pages/update2025.html" class="card-link">
-				<article class="card">
-					<img src="images/cards/card3.jpg" alt="Learn 2">
-					<h3>Learn 2</h3>
-					<p>Learn Description 2</p>
-				</article>
-			</a>
+        <a href="pages/hcel.html" class="card-link">
+          <article class="card">
+            <img src="images/cards/card7.webp" alt="Halo Combat Evolved Potential Remake">
+            <h3>Combat Evolved — Unreal Engine 5 Remake Rumor</h3>
+            <p>Reports suggest a full UE5 remake of the original Halo: CE may be in development — here’s everything we know so far.</p>
+          </article>
+        </a>
 
-			<a href="pages/hbti.html" class="card-link">
-				<article class="card">
-					<img src="images/cards/card5.jpg" alt="Halo 5 vs Halo Infinite">
-					<h3>Halo 5 is Better than Halo Infinite</h3>
-					<p>Carson's Reasons on why Halo 5 is better.</p>
-				</article>
-			</a>
+        <a href="pages/learn/baim.html" class="card-link">
+          <article class="card">
+            <img src="images/cards/card4.jpg" alt="Learn 1">
+            <h3>Master Your Aim in Halo Infinite</h3>
+            <p>Learn the mechanics behind precision aiming, strafing, and sensitivity tuning to elevate your gameplay.</p>
+          </article>
+        </a>
 
-			<a href="pages/mad.html" class="card-link">
-				<article class="card">
-					<img src="images/cards/card6.jpg" alt="Microtransactions Critique">
-					<h3>Microtransactions are Dumb</h3>
-					<p>Microtransactions ruined video games.</p>
-				</article>
-			</a>
+        <a href="pages/learn/movement.html" class="card-link">
+          <article class="card">
+            <img src="images/cards/card3.jpg" alt="Learn 2">
+            <h3>Movement & Map Control Guide</h3>
+            <p>Take control of every arena with advanced movement tips, slide-cancels, and map positioning strategies.</p>
+          </article>
+        </a>
 
-			<a href="pages/hcel.html" class="card-link">
-			<article class="card">
-				<img src="images/cards/card7.webp" alt="Halo Combat Evolved Potential Remake">
-				<h3>Combat Evolved — Full Remake (Unreal Engine 5) (Rumor Roundup)</h3>
-				<p>A complete, UE5-powered remake of Halo: Combat Evolved is widely reported in October 2025 — here’s what the rumors, context, and next steps mean for fans.</p>
-			</article>
-		</div>
-	</section>
+        <a href="pages/data.html" class="card-link">
+          <article class="card">
+            <img src="images/cards/card5.jpg" alt="All Halo Games">
+            <h3>All Halo Games Database</h3>
+            <p>Explore every title in the Halo franchise — from Combat Evolved to Infinite — with full release and developer details.</p>
+          </article>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p><strong>Created by:</strong> <a href="#">CARS0NMB</a></p>
+        <p>&copy; 2025 Halo HQ</p>
+      </div>
+      <div class="footer-center">
+        <p>Halo HQ is a fan-made site and is not officially endorsed or affiliated with Microsoft, Xbox, or the Halo brands.</p>
+      </div>
+    </div>
+  </footer>
 </body>
-
-<footer>
-	<div class="footer-content">
-		<div class="footer-left">
-			<p><strong>Created by:</strong> <a>CARS0NMB</a></p>
-			<p>&copy; 2025 Halo HQ</p>
-		</div>
-		<div class="footer-center">
-			<p>Halo HQ is a fan-made site and is not officially endorsed or affiliated with Microsoft, Xbox, or the Halo brands.</p>
-		</div>
-	</div>
-</footer>
 </html>

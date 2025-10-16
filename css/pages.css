@@ -175,6 +175,6 @@ footer nav a:hover {
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrollbars */
-  background-color: #000; /* or your site’s background color */
+  overflow-x: hidden; 
+  background-color: #000; 
 }
