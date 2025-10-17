@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
   function closePopup() {
     popup.style.display = "none";
     overlay.style.display = "none";
-    localStorage.setItem("popupClosed", "true"); // mark as closed
+    localStorage.setItem("popupClosed", "true"); 
   }
 
   closeBtn.addEventListener("click", closePopup);

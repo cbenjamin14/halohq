@@ -122,6 +122,15 @@ footer nav a:hover {
   letter-spacing: 2px;
 }
 
+#Latest h1,
+#Learn h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #4da6ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 #carsonpicks h2 {
   font-size: 2rem;
   margin-bottom: 2rem;

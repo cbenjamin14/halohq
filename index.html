@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Halo fan website">
   <link rel="stylesheet" href="css/index.css">
   <script src="js/index.js" defer></script>
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -10,21 +12,20 @@
 </head>
 
 <body>
+  <!-- Header -->
   <header>
     <a href="index.html">
       <img id="logo" src="images/halohqlogo.png" alt="Halo HQ Logo">
     </a>
-    <div id="divhead">
-      <nav>
-        <a href="pages/hcel.html">Latest</a>
-        <a href="browse.html">Browse</a>
-        <a href="learn.html">Learn</a>
-        <a href="https://store.steampowered.com/app/1240440/Halo_Infinite/">Play Halo</a>
-      </nav>
-    </div>
+    <nav id="divhead">
+      <a href="pages/hcel.html">Latest</a>
+      <a href="browse.html">Browse</a>
+      <a href="learn.html">Learn</a>
+      <a href="https://store.steampowered.com/app/1240440/Halo_Infinite/" target="_blank">Play Halo</a>
+    </nav>
   </header>
 
-  <!-- popup -->
+  <!-- Popup -->
   <div id="popup">
     <div class="popup-content">
       <h2>Get the Latest Halo News!</h2>
@@ -37,9 +38,9 @@
     </div>
   </div>
 
-  <!-- latest -->
+  <!-- Latest News -->
   <section id="Latest">
-    <h2>Latest News</h2>
+    <h1>Latest Halo News</h1>
     <div class="grid">
       <a href="pages/hcel.html" class="card-link">
         <article class="card">
@@ -67,7 +68,7 @@
     </div>
   </section>
 
-  <!-- learn -->
+  <!-- Learn -->
   <section id="Learn">
     <h2>Learn</h2>
     <div class="grid">
@@ -78,32 +79,24 @@
           <p>Learn how to perfect your aim and dominate every duel in Halo Infinite.</p>
         </article>
       </a>
+    </div>
+  </section>
 
-      <a href="pages/learn/baim.html" class="card-link">
+  <!-- More -->
+  <section id="carsonpicks">
+    <h2>More</h2>
+    <div class="grid">
+      <a href="pages/data.html" class="card-link">
         <article class="card">
-          <img src="images/cards/card3.jpg" alt="Learn 2">
-          <h3>Learn 2</h3>
-          <p>Learn Description 2</p>
+          <img src="images/cards/card5.jpg" alt="All Halo Games">
+          <h3>All Halo Games Database</h3>
+          <p>Explore every title in the Halo franchise — from Combat Evolved to Infinite — with full release and developer details.</p>
         </article>
       </a>
     </div>
   </section>
 
-  <!-- more -->
-  <section id="carsonpicks">
-    <h2>More</h2>
-    <div class="grid">
-        <a href="pages/data.html" class="card-link">
-          <article class="card">
-            <img src="images/cards/card5.jpg" alt="All Halo Games">
-            <h3>All Halo Games Database</h3>
-            <p>Explore every title in the Halo franchise — from Combat Evolved to Infinite — with full release and developer details.</p>
-          </article>
-        </a>
-    </div>
-  </section>
-
-  <!-- footer -->
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <div class="footer-left">
@@ -116,4 +109,5 @@
     </div>
   </footer>
 </body>
+
 </html>
